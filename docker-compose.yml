@@ -1,0 +1,9 @@
+services:
+  streamlit:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+    tty: true
+    stdin_open: true
